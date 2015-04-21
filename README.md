@@ -5,6 +5,7 @@ A framework for setting up vim and plugins using vundle.
 
 Installation
 ------------
+
 From your homedirectory:
 
     git clone --recursive git://github.com/dotphiles/dotvim.git .vim
