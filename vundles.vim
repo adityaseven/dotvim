@@ -47,7 +47,6 @@ if count(g:vundles, 'programming')
     Bundle 'mileszs/ack.vim'
   endif
   if v:version > 700
-    Bundle 'scrooloose/syntastic'
     if executable('ctags')
       Bundle 'majutsushi/tagbar'
     endif
