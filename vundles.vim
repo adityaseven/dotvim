@@ -27,6 +27,7 @@ if count(g:vundles, 'general')
   Bundle 'Raimondi/delimitMate'
   Bundle 'bling/vim-airline'
   Bundle 'rodjek/vim-puppet'
+  Bundle 'flazz/vim-colorschemes'
 endif
 
 if count(g:vundles, 'git')
@@ -50,7 +51,8 @@ if count(g:vundles, 'programming')
     if executable('ctags')
       Bundle 'majutsushi/tagbar'
     endif
-endif
+ endif
+    Bundle 'junkblocker/patchreview-vim'
 endif
 
 if count(g:vundles, 'completion')
@@ -71,6 +73,21 @@ endif
 if count(g:vundles, 'python')
   Bundle 'hynek/vim-python-pep8-indent'
   let g:syntastic_python_flake8_args='--ignore=E501'
+endif
+
+if count(g:vundles, 'rust')
+  if executable('rustc')
+    Bundle 'rust-lang/rust.vim'
+    au BufNewFile,BufRead *.rs set filetype=rust
+  endif
+endif
+
+if count(g:vundles, 'kernel')
+    Bundle 'vivien/vim-linux-coding-style'
+endif
+
+if count(g:vundles, 'c_cpp')
+  Bundle 'vim-scripts/c.vim'
 endif
 
 " Javascript
