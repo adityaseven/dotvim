@@ -28,6 +28,7 @@ if count(g:vundles, 'general')
   ""Bundle 'bling/vim-airline'
   Bundle 'rodjek/vim-puppet'
   Bundle 'flazz/vim-colorschemes'
+  ""Bundle 'embear/vim-localvimrc'
   Bundle 'chriskempson/base16-vim'
 endif
 
