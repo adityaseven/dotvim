@@ -30,6 +30,9 @@ if count(g:vundles, 'general')
   Bundle 'flazz/vim-colorschemes'
   ""Bundle 'embear/vim-localvimrc'
   Bundle 'chriskempson/base16-vim'
+  Bundle 'ciaranm/detectindent'
+  " Detect indent mode automatically (tab vs spaces)
+  autocmd BufReadPost * :DetectIndent
 endif
 
 if count(g:vundles, 'git')
