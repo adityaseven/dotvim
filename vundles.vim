@@ -48,6 +48,7 @@ if count(g:vundles, 'hg')
 endif
 " General Programming
 if count(g:vundles, 'programming')
+  Bundle 'scrooloose/syntastic'
   Bundle 'godlygeek/tabular'
   if executable('ack')
     Bundle 'mileszs/ack.vim'
