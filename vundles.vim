@@ -87,10 +87,6 @@ if count(g:vundles, 'rust')
   endif
 endif
 
-if count(g:vundles, 'kernel')
-    Bundle 'vivien/vim-linux-coding-style'
-endif
-
 if count(g:vundles, 'c_cpp')
   Bundle 'vim-scripts/c.vim'
 endif
