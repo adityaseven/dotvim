@@ -24,11 +24,12 @@ if count(g:vundles, 'general')
   Bundle 'bronson/vim-trailing-whitespace'
   Bundle 'mbbill/undotree'
   Bundle 'mhinz/vim-signify'
+  Bundle 'vim-signature'
   Bundle 'Raimondi/delimitMate'
+  Bundle 'vim-scripts/marvim'
   ""Bundle 'bling/vim-airline'
-  Bundle 'rodjek/vim-puppet'
+  ""Bundle 'rodjek/vim-puppet'
   Bundle 'flazz/vim-colorschemes'
-  ""Bundle 'embear/vim-localvimrc'
   Bundle 'chriskempson/base16-vim'
   Bundle 'ciaranm/detectindent'
   " Detect indent mode automatically (tab vs spaces)
@@ -48,7 +49,7 @@ if count(g:vundles, 'hg')
 endif
 " General Programming
 if count(g:vundles, 'programming')
-  Bundle 'scrooloose/syntastic'
+ "Bundle 'scrooloose/syntastic'
   Bundle 'godlygeek/tabular'
   if executable('ack')
     Bundle 'mileszs/ack.vim'
@@ -58,16 +59,18 @@ if count(g:vundles, 'programming')
       Bundle 'majutsushi/tagbar'
     endif
  endif
-    Bundle 'junkblocker/patchreview-vim'
+ ""  Bundle 'junkblocker/patchreview-vim'
 endif
 
 if count(g:vundles, 'completion')
-    Bundle 'Shougo/neocomplcache'
-    Bundle 'Shougo/neosnippet'
-    Bundle 'Shougo/neosnippet-snippets'
-    Bundle 'scrooloose/snipmate-snippets'
-    Bundle 'honza/vim-snippets'
-    Bundle 'Indent-Guides'
+   "" Bundle 'Shougo/neocomplcache'
+    "Bundle 'Shougo/neosnippet'
+    "Bundle 'Shougo/neosnippet-snippets'
+    "Bundle 'scrooloose/snipmate-snippets'
+    "Bundle 'honza/vim-snippets'
+  ""  Bundle 'Indent-Guides'
+  ""  Bundle 'rdnetto/YCM-Generator'
+  ""  Bundle 'Valloric/YouCompleteMe'
 endif
 
 " PHP
