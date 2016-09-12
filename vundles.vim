@@ -16,8 +16,6 @@ if count(g:vundles, 'general')
   Bundle 'YankRing.vim'
   let g:yankring_history_dir = $HOME.'/.vim/'
   let g:yankring_history_file = '.yankring_history'
-  ""Bundle 'tpope/vim-repeat'
-  ""Bundle 'AutoClose'
   Bundle 'kien/ctrlp.vim'
   Bundle 'jistr/vim-nerdtree-tabs'
   Bundle 'sudo.vim'
@@ -27,8 +25,6 @@ if count(g:vundles, 'general')
   Bundle 'vim-signature'
   Bundle 'Raimondi/delimitMate'
   Bundle 'vim-scripts/marvim'
-  ""Bundle 'bling/vim-airline'
-  ""Bundle 'rodjek/vim-puppet'
   Bundle 'flazz/vim-colorschemes'
   Bundle 'chriskempson/base16-vim'
   Bundle 'ciaranm/detectindent'
@@ -47,10 +43,14 @@ if count(g:vundles, 'hg')
     Bundle 'k-takata/hg-vim'
   endif
 endif
+
 " General Programming
 if count(g:vundles, 'programming')
  "Bundle 'scrooloose/syntastic'
   Bundle 'godlygeek/tabular'
+  Bundle 'vim-scripts/taglist.vim'
+  Bundle 'joe-skb7/cscope-maps'
+  Bundle 'szw/vim-tags'
   if executable('ack')
     Bundle 'mileszs/ack.vim'
   endif
@@ -59,18 +59,17 @@ if count(g:vundles, 'programming')
       Bundle 'majutsushi/tagbar'
     endif
  endif
- ""  Bundle 'junkblocker/patchreview-vim'
 endif
 
 if count(g:vundles, 'completion')
-   "" Bundle 'Shougo/neocomplcache'
-    "Bundle 'Shougo/neosnippet'
-    "Bundle 'Shougo/neosnippet-snippets'
-    "Bundle 'scrooloose/snipmate-snippets'
-    "Bundle 'honza/vim-snippets'
-  ""  Bundle 'Indent-Guides'
-  ""  Bundle 'rdnetto/YCM-Generator'
-  ""  Bundle 'Valloric/YouCompleteMe'
+    Bundle 'Shougo/neocomplcache'
+    Bundle 'Shougo/neosnippet'
+    Bundle 'Shougo/neosnippet-snippets'
+    Bundle 'scrooloose/snipmate-snippets'
+    Bundle 'honza/vim-snippets'
+    Bundle 'Indent-Guides'
+    Bundle 'rdnetto/YCM-Generator'
+    Bundle 'Valloric/YouCompleteMe'
 endif
 
 " PHP
