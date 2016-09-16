@@ -68,8 +68,6 @@ if count(g:vundles, 'completion')
     Bundle 'scrooloose/snipmate-snippets'
     Bundle 'honza/vim-snippets'
     Bundle 'Indent-Guides'
-    Bundle 'rdnetto/YCM-Generator'
-    Bundle 'Valloric/YouCompleteMe'
 endif
 
 " PHP
