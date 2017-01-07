@@ -58,6 +58,7 @@ if count(g:vundles, 'programming')
   if v:version > 700
     if executable('ctags')
       Bundle 'majutsushi/tagbar'
+      let g:tagbar_sort=0
     endif
  endif
 endif
