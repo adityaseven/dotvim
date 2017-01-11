@@ -28,6 +28,7 @@ if count(g:vundles, 'general')
   Bundle 'flazz/vim-colorschemes'
   Bundle 'chriskempson/base16-vim'
   Bundle 'ciaranm/detectindent'
+  Bundle 'Yggdroot/indentLine'
   " Detect indent mode automatically (tab vs spaces)
   autocmd BufReadPost * :DetectIndent
 endif
@@ -57,6 +58,7 @@ if count(g:vundles, 'programming')
   if v:version > 700
     if executable('ctags')
       Bundle 'majutsushi/tagbar'
+      let g:tagbar_sort=0
     endif
  endif
 endif
