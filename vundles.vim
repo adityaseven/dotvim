@@ -25,8 +25,6 @@ if count(g:vundles, 'general')
   Bundle 'vim-signature'
   Bundle 'Raimondi/delimitMate'
   Bundle 'vim-scripts/marvim'
-  Bundle 'flazz/vim-colorschemes'
-  Bundle 'chriskempson/base16-vim'
   Bundle 'ciaranm/detectindent'
   Bundle 'Yggdroot/indentLine'
   " Detect indent mode automatically (tab vs spaces)
@@ -36,6 +34,9 @@ endif
 if count(g:vundles, 'git')
   if executable('git')
     Bundle 'tpope/vim-fugitive'
+  endif
+  if executable('stg')
+   Bundle 'chazy/vim-stgit'
   endif
 endif
 
@@ -112,6 +113,22 @@ endif
 " Ruby
 if count(g:vundles, 'ruby')
   Bundle 'tpope/vim-rails'
+endif
+
+"Lisp family
+if count(g:vundles, 'lisp')
+ Bundle 'sjl/tslime.vim'
+ Bundle 'wlangstroth/vim-racket'
+ Bundle 'kien/rainbow_parentheses.vim'
+endif
+
+"themes
+if count(g:vundles, 'themes')
+ Bundle 'daylerees/colour-schemes', { 'rtp': 'vim/' }
+ Bundle 'trevordmiller/nova-vim'
+ Bundle 'daviesjamie/vim-base16-lightline'
+ Bundle 'flazz/vim-colorschemes'
+ Bundle 'chriskempson/base16-vim'
 endif
 
 " Misc
