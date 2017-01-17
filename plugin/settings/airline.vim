@@ -20,7 +20,7 @@ if !exists('g:airline_powerline_fonts')
    let g:airline_symbols.linenr='LN'
    let g:airline_symbols.paste = 'P'
    let g:airline_symbols.whitespace = '||'
-  
+
    let g:airline_symbols.branch   = '^'
    let g:airline_symbols.readonly = '&'
 
