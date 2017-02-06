@@ -65,12 +65,13 @@ if count(g:vundles, 'programming')
 endif
 
 if count(g:vundles, 'completion')
-    Bundle 'Shougo/neocomplcache'
-    Bundle 'Shougo/neosnippet'
-    Bundle 'Shougo/neosnippet-snippets'
-    Bundle 'scrooloose/snipmate-snippets'
-    Bundle 'honza/vim-snippets'
-    Bundle 'Indent-Guides'
+    "Bundle 'Shougo/neocomplcache'
+    "Bundle 'Shougo/neosnippet'
+    "Bundle 'Shougo/neosnippet-snippets'
+    "Bundle 'scrooloose/snipmate-snippets'
+    "Bundle 'honza/vim-snippets'
+    "Bundle 'Indent-Guides'
+     Bundle 'valloric/YouCompleteMe'
 endif
 
 " PHP
@@ -81,6 +82,9 @@ endif
 " Python
 if count(g:vundles, 'python')
   Bundle 'hynek/vim-python-pep8-indent'
+  "Bundle 'python-mode/python-mode'
+  Bundle 'vim-scripts/indentpython.vim'
+  Bundle 'nvie/vim-flake8'
   let g:syntastic_python_flake8_args='--ignore=E501'
 endif
 
