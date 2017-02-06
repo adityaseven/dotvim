@@ -48,9 +48,8 @@ endif
 
 " General Programming
 if count(g:vundles, 'programming')
- "Bundle 'scrooloose/syntastic'
+  Bundle 'scrooloose/syntastic'
   Bundle 'godlygeek/tabular'
-  Bundle 'vim-scripts/taglist.vim'
   Bundle 'joe-skb7/cscope-maps'
   Bundle 'szw/vim-tags'
   if executable('ack')
