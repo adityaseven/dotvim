@@ -27,6 +27,12 @@ if count(g:vundles, 'general')
   Bundle 'vim-scripts/marvim'
   Bundle 'ciaranm/detectindent'
   Bundle 'Yggdroot/indentLine'
+  Bundle 'embear/vim-localvimrc'
+  Bundle 'xolox/vim-misc'
+  Bundle 'mattn/calendar-vim'
+  Bundle 'tpope/vim-abolish'
+  Bundle 'tpope/vim-repeat'
+
   " Detect indent mode automatically (tab vs spaces)
   autocmd BufReadPost * :DetectIndent
 endif
@@ -48,29 +54,36 @@ endif
 
 " General Programming
 if count(g:vundles, 'programming')
- "Bundle 'scrooloose/syntastic'
+  Bundle 'scrooloose/syntastic'
   Bundle 'godlygeek/tabular'
-  Bundle 'vim-scripts/taglist.vim'
-  Bundle 'joe-skb7/cscope-maps'
   Bundle 'szw/vim-tags'
+  Bundle 'Chiel92/vim-autoformat'
+  Bundle 'sheerun/vim-polyglot'
+  if executable('cscope')
+   Bundle 'joe-skb7/cscope-maps'
+   Bundle 'hari-rangarajan/CCTree'
+  endif
   if executable('ack')
     Bundle 'mileszs/ack.vim'
   endif
   if v:version > 700
     if executable('ctags')
       Bundle 'majutsushi/tagbar'
+      Bundle 'xolox/vim-easytags'
       let g:tagbar_sort=0
     endif
  endif
 endif
 
+if count(g:vundles, 'writing')
+  Bundle 'junegunn/goyo.vim'
+  Bundle 'reedes/vim-pencil'
+  Bundle 'vimwiki/vimwiki.git'
+  Bundle 'neilagabriel/vim-geeknote'
+endif
+
 if count(g:vundles, 'completion')
-    Bundle 'Shougo/neocomplcache'
-    Bundle 'Shougo/neosnippet'
-    Bundle 'Shougo/neosnippet-snippets'
-    Bundle 'scrooloose/snipmate-snippets'
-    Bundle 'honza/vim-snippets'
-    Bundle 'Indent-Guides'
+     Bundle 'valloric/YouCompleteMe'
 endif
 
 " PHP
@@ -81,6 +94,9 @@ endif
 " Python
 if count(g:vundles, 'python')
   Bundle 'hynek/vim-python-pep8-indent'
+  "Bundle 'python-mode/python-mode'
+  Bundle 'vim-scripts/indentpython.vim'
+  Bundle 'nvie/vim-flake8'
   let g:syntastic_python_flake8_args='--ignore=E501'
 endif
 
@@ -128,6 +144,8 @@ if count(g:vundles, 'themes')
  Bundle 'daviesjamie/vim-base16-lightline'
  Bundle 'flazz/vim-colorschemes'
  Bundle 'chriskempson/base16-vim'
+ Bundle 'morhetz/gruvbox'
+ Bundle 'vim-airline/vim-airline'
 endif
 
 " Misc
