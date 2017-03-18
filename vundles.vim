@@ -79,6 +79,7 @@ if count(g:vundles, 'writing')
   Bundle 'junegunn/goyo.vim'
   Bundle 'reedes/vim-pencil'
   Bundle 'vimwiki/vimwiki.git'
+  Bundle 'plasticboy/vim-markdown'
   if executable('geeknote')
    Bundle 'neilagabriel/vim-geeknote'
   endif
