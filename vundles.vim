@@ -153,7 +153,6 @@ endif
 
 " Misc
 if count(g:vundles, 'misc')
-  Bundle 'tpope/vim-markdown'
   Bundle 'spf13/vim-preview'
   Bundle 'tpope/vim-cucumber'
   Bundle 'markcornick/vim-vagrant'
