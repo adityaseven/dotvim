@@ -86,7 +86,9 @@ if count(g:vundles, 'writing')
 endif
 
 if count(g:vundles, 'completion')
-     Bundle 'valloric/YouCompleteMe'
+  Bundle 'SirVer/ultisnips'
+  Bundle 'honza/vim-snippets'
+  Bundle 'valloric/YouCompleteMe'
 endif
 
 " PHP
