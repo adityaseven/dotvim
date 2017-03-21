@@ -32,6 +32,7 @@ if count(g:vundles, 'general')
   Bundle 'mattn/calendar-vim'
   Bundle 'tpope/vim-abolish'
   Bundle 'tpope/vim-repeat'
+  Bundle 'ervandew/supertab'
 
   " Detect indent mode automatically (tab vs spaces)
   autocmd BufReadPost * :DetectIndent
@@ -86,9 +87,9 @@ if count(g:vundles, 'writing')
 endif
 
 if count(g:vundles, 'completion')
+  Bundle 'valloric/YouCompleteMe'
   Bundle 'SirVer/ultisnips'
   Bundle 'honza/vim-snippets'
-  Bundle 'valloric/YouCompleteMe'
 endif
 
 " PHP
