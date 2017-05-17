@@ -153,6 +153,7 @@ if count(g:vundles, 'themes')
  Bundle 'chriskempson/base16-vim'
  Bundle 'morhetz/gruvbox'
  Bundle 'vim-airline/vim-airline'
+ Bundle 'vim-airline/vim-airline-themes'
 endif
 
 " Misc
