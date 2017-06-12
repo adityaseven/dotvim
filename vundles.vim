@@ -115,7 +115,7 @@ if count(g:vundles, 'rust')
 endif
 
 if count(g:vundles, 'c_cpp')
-  Bundle 'vim-scripts/c.vim'
+  Bundle 'WolfgangMehner/c-support'
 endif
 
 " Javascript
