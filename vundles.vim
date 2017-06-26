@@ -33,7 +33,6 @@ if count(g:vundles, 'general')
   Bundle 'tpope/vim-abolish'
   Bundle 'tpope/vim-repeat'
   Bundle 'ervandew/supertab'
-  Bundle 'weynhamz/vim-plugin-minibufexpl'
 
   " Detect indent mode automatically (tab vs spaces)
   autocmd BufReadPost * :DetectIndent
