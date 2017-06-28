@@ -70,7 +70,7 @@ if count(g:vundles, 'programming')
   if v:version > 700
     if executable('ctags')
       Bundle 'majutsushi/tagbar'
-      Bundle 'xolox/vim-easytags'
+      "Bundle 'xolox/vim-easytags'
       let g:tagbar_sort=0
     endif
  endif
