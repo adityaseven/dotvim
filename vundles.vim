@@ -57,7 +57,7 @@ endif
 if count(g:vundles, 'programming')
   Bundle 'scrooloose/syntastic'
   Bundle 'godlygeek/tabular'
-  Bundle 'szw/vim-tags'
+  "Bundle 'szw/vim-tags'
   Bundle 'Chiel92/vim-autoformat'
   Bundle 'sheerun/vim-polyglot'
   if executable('cscope')
