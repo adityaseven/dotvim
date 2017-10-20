@@ -11,6 +11,7 @@
 Bundle 'gmarik/vundle'
 
 " General
+"
 if count(g:vundles, 'general')
   Bundle 'scrooloose/nerdtree'
   Bundle 'YankRing.vim'
