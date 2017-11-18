@@ -101,9 +101,9 @@ endif
 " Python
 if count(g:vundles, 'python')
  "Bundle 'hynek/vim-python-pep8-indent'
-  "Bundle 'python-mode/python-mode'
+  Bundle 'python-mode/python-mode'
   "Bundle 'vim-scripts/indentpython.vim'
-  "Bundle 'nvie/vim-flake8'
+  Bundle 'nvie/vim-flake8'
   let g:syntastic_python_flake8_args='--ignore=E501'
 endif
 
