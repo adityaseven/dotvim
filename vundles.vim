@@ -34,6 +34,7 @@ if count(g:vundles, 'general')
   Bundle 'tpope/vim-abolish'
   Bundle 'tpope/vim-repeat'
   Bundle 'ervandew/supertab'
+  "Bundle 'dense-analysis/ale'
 
   " Detect indent mode automatically (tab vs spaces)
   autocmd BufReadPost * :DetectIndent
@@ -61,17 +62,12 @@ if count(g:vundles, 'programming')
   "Bundle 'szw/vim-tags'
   Bundle 'Chiel92/vim-autoformat'
   Bundle 'sheerun/vim-polyglot'
-  if executable('cscope')
-   Bundle 'joe-skb7/cscope-maps'
-   Bundle 'hari-rangarajan/CCTree'
-  endif
   if executable('ack')
     Bundle 'mileszs/ack.vim'
   endif
   if v:version > 700
     if executable('ctags')
       Bundle 'majutsushi/tagbar'
-      "Bundle 'xolox/vim-easytags'
       let g:tagbar_sort=0
     endif
  endif
@@ -88,7 +84,7 @@ if count(g:vundles, 'writing')
 endif
 
 if count(g:vundles, 'completion')
-  Bundle 'valloric/YouCompleteMe'
+  Bundle 'neoclide/coc.nvim'
   Bundle 'SirVer/ultisnips'
   Bundle 'honza/vim-snippets'
 endif
@@ -100,10 +96,6 @@ endif
 
 " Python
 if count(g:vundles, 'python')
- "Bundle 'hynek/vim-python-pep8-indent'
-  Bundle 'python-mode/python-mode'
-  "Bundle 'vim-scripts/indentpython.vim'
-  Bundle 'nvie/vim-flake8'
   let g:syntastic_python_flake8_args='--ignore=E501'
 endif
 
